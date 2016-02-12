@@ -1,0 +1,21 @@
+This project consist of following:
+
+1) LightWeight rest implementation in Spring MVC.
+    * Rest implementation don't have any DB/File interaction.
+    * Rest consist of End points, Service and Repository calls
+2) JS Client in AngularJS.
+
+InOrder to run project:
+
+Running in standalone server/web container. i.e. Tomcat
+1) build it using mvn clean install. (Need to install maven if not in your system)
+2) place target/organization.war in webapps folder of tomcat.
+3) Access http://localhost:8080/organization-rest/client (your port can be of different one instead of 8080)
+
+Running into Intellij idea, using integration Tomcat
+1) Enable maven integration plugin, and run pom.xml file. This will download all the dependencies.
+2) Start tomcat, and navigate to http://localhost:8080/client (your port can be of different one instead of 8080)
+
+
+curl-rest.md is Markdown documentation on rest
+organization-rest.json is chrome postman collection dump for rest
